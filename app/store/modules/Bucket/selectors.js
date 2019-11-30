@@ -1,0 +1,1 @@
+export const getBuckets = (state) => state.buckets;

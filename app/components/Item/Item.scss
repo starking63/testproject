@@ -1,0 +1,25 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
+
+.item-component {
+  background-color: $item-component-background-color;
+  padding: 0.8em 1em;
+  margin: 10px 0;
+  box-shadow: $item-box-shadow;
+  transition: box-shadow 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  cursor: pointer;
+
+  .item-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+
+  .item-decription {
+    font-size: 1.1em;
+  }
+
+  &:hover {
+    transition: box-shadow 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: $item-box-shadow-hover;
+  }
+}
